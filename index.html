@@ -11,7 +11,7 @@
     <!-- header section -->
     <header>
       <div class="text-center bg-black h-96 mb-16">
-        <h1 class="text-5xl text-orange-500 font-semibold pt-32">
+        <h1 class="text-5xl text-orange-500 font-semibold pt-28">
           Select Your Best Five
         </h1>
         <p class="text-base text-white w-2/5 pt-8 mx-auto">
@@ -95,9 +95,9 @@
             </div>
           </div>
           <!-- select section -->
-          <div class="">
-            <div class="bg-black text-center text-white shadow-lg h-80 w-52">
-              <h3 class="text-3xl pt-3">SELECT V</h3>
+          <section class="">
+            <div class="bg-black text-center text-white shadow-lg h-80 w-60">
+              <h3 class="text-3xl italic font-medium pt-5">SELECT V</h3>
               <ul>
                 <li></li>
                 <li></li>
@@ -107,15 +107,59 @@
               </ul>
             </div>
             <!-- calculate amount -->
-            <div class="bg-black text-center text-white shadow-lg h-80 w-52">
+            <div class="bg-black text-center text-white shadow-lg h-3/5 w-60">
               <div class="mt-4 text-center">
-                <h3 class="text-3xl pt-3">Budget</h3>
+                <h3 class="text-3xl italic font-medium pt-5">Budget</h3>
+                <div class="py-5">
+                  <label class="text-sm pr-2">Per Player </label>
+                  <input
+                    class="bg-black font-light border border-white rounded-none w-1/2 px-2 py-1"
+                    type="text"
+                    name=""
+                    id=""
+                  />
+                </div>
+                <button class="bg-blue-600 px-16 py-2 mb-4">Calculate</button>
+                <div class="flex justify-between">
+                  <h4 class="pl-6">Player Expenses</h4>
+                  <h4 class="pr-6">$<span>0</span></h4>
+                </div>
+                <div class="space-y-4">
+                  <label class="text-sm pr-4">Manager</label>
+                  <input
+                    class="bg-black font-light border border-white rounded-none w-1/2 px-2 py-1"
+                    type="text"
+                    name=""
+                    id=""
+                  />
+                  <label class="text-sm pr-8">Coach</label>
+                  <input
+                    class="bg-black font-light border border-white rounded-none w-1/2 px-2 py-1"
+                    type="text"
+                    name=""
+                    id=""
+                  />
+                  <button class="bg-blue-600 px-11 py-2">
+                    Calculate Total
+                  </button>
+                </div>
+                <div class="flex justify-between mt-3">
+                  <h3 class="pl-7">Total</h3>
+                  <h3 class="text-orange-500 pr-8">$<span>0</span></h3>
+                </div>
               </div>
             </div>
-          </div>
+          </section>
         </div>
       </section>
     </main>
+    <!-- footer section -->
+    <footer>
+      <hr class="mt-32 border-gray-600" />
+      <p class="text-center text-white py-8">
+        Copyright @ 2022 All Rights Reserved.
+      </p>
+    </footer>
 
     <script src="js/utility.js"></script>
   </body>
