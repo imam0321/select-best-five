@@ -1,3 +1,10 @@
+document.getElementById("select-btn").addEventListener("click", function () {
+  const name = document.getElementById("name");
+  const nameField = name.innerText;
+  const setName = document.getElementById("set-name");
+  setName.innerText = nameField;
+});
+
 document.getElementById("calculate-btn").addEventListener("click", function () {
   const playerAmount = inputValues("par-player-amount");
   const playersExpenses = playerAmount * 5;
