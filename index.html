@@ -98,13 +98,13 @@
           <section class="">
             <div class="bg-black text-center text-white shadow-lg h-80 w-60">
               <h3 class="text-3xl italic font-medium pt-5">SELECT V</h3>
-              <ul>
+              <ol>
+                <li>imam</li>
+                <li>imam</li>
                 <li></li>
                 <li></li>
                 <li></li>
-                <li></li>
-                <li></li>
-              </ul>
+              </ol>
             </div>
             <!-- calculate amount -->
             <div class="bg-black text-center text-white shadow-lg h-3/5 w-60">
@@ -116,36 +116,41 @@
                     class="bg-black font-light border border-white rounded-none w-1/2 px-2 py-1"
                     type="text"
                     name=""
-                    id=""
+                    id="par-player-amount"
                   />
                 </div>
-                <button class="bg-blue-600 px-16 py-2 mb-4">Calculate</button>
+                <button id="calculate-btn" class="bg-blue-600 px-16 py-2 mb-4">
+                  Calculate
+                </button>
                 <div class="flex justify-between">
                   <h4 class="pl-6">Player Expenses</h4>
-                  <h4 class="pr-6">$<span>0</span></h4>
+                  <h4 class="pr-6">$<span id="player-expenses">0</span></h4>
                 </div>
                 <div class="space-y-4">
                   <label class="text-sm pr-4">Manager</label>
                   <input
                     class="bg-black font-light border border-white rounded-none w-1/2 px-2 py-1"
                     type="text"
-                    name=""
-                    id=""
+                    id="manager-cost"
                   />
                   <label class="text-sm pr-8">Coach</label>
                   <input
                     class="bg-black font-light border border-white rounded-none w-1/2 px-2 py-1"
                     type="text"
-                    name=""
-                    id=""
+                    id="coach-cost"
                   />
-                  <button class="bg-blue-600 px-11 py-2">
+                  <button
+                    id="calculate-total-btn"
+                    class="bg-blue-600 px-11 py-2"
+                  >
                     Calculate Total
                   </button>
                 </div>
                 <div class="flex justify-between mt-3">
                   <h3 class="pl-7">Total</h3>
-                  <h3 class="text-orange-500 pr-8">$<span>0</span></h3>
+                  <h3 class="text-orange-500 pr-8">
+                    $<span id="total-amount">0</span>
+                  </h3>
                 </div>
               </div>
             </div>
@@ -160,7 +165,7 @@
         Copyright @ 2022 All Rights Reserved.
       </p>
     </footer>
-
     <script src="js/utility.js"></script>
+    <script src="js/calculate.js"></script>
   </body>
 </html>
